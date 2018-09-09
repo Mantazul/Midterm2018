@@ -17,7 +17,7 @@ public static void main(String[] args) {
         map.put(5, "San Jose");
         map.put(5, "Seattle");
 
-
+    // Collection<Map> ------- then iterate through the collection and print it.
     }
 
 }
