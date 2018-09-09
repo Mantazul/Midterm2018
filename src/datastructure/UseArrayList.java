@@ -1,4 +1,6 @@
 package datastructure;
+import databases.ConnectToMongoDB;
+
 import java.io.*;
 import java.sql.*;
 import java.util.*;
@@ -27,7 +29,12 @@ public class UseArrayList {
 		for(Integer i: list) System.out.print(i+" ");
 		System.out.println("\nLast element added in array list: " + list.get(list.size()-1));
 
-        //List<Integer> data = new ArrayList<Integer>();
+		ConnectToMongoDB connect1 = new ConnectToMongoDB();
+		List<Integer> list1 = connect1.insertArrayList(list);
+		System.out.println("ArrayList printed from database: ");
+		for(Integer i:list1){
+			System.out.print(i+" ");
+		}
 
 
 	}
