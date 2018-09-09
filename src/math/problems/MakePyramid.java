@@ -14,7 +14,7 @@ public class MakePyramid {
 
         */
 
-        int n = 10;
+        int n = 6;
         printTriagle(n);
     }
 

@@ -32,6 +32,8 @@ public class DuplicateWord {
         Set<String> duplicates = new HashSet<>();
 
         String[] words = input.split(" ");
+        double length = (double) input.length()/ words.length;
+        System.out.println("Average length of words: "+ length);
 
         Set<String> set = new HashSet<>();
 
