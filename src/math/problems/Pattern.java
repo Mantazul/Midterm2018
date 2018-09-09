@@ -8,8 +8,22 @@ public class Pattern {
 		 *
 		 *
 		 */
-		
 
-
+		int num = 51;
+		int round = 5;
+		int pattern =1;
+		while (num >= 1) {
+           for(int i=0;i<(round * pattern) ; i++){
+			   num = num - pattern;
+			   if(num<1) break;
+			   System.out.println(num);
+		   }
+		   pattern++;
+		}
 	}
 }
+
+/**
+ * difference adds 1 every pattern. after round of 10 , range multiplies to multiples of 10 each round.
+ * multiples of 10 from that number itself.
+ */
