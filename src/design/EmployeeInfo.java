@@ -21,6 +21,25 @@ public class EmployeeInfo {
 	 * declare few static and final fields and some non-static fields
 	 */
 	static String companyName;
+
+	public int getEmployeeId() {
+		return employeeId;
+	}
+
+	public void setEmployeeId(int employeeId) {
+		this.employeeId = employeeId;
+	}
+
+	public String getEmpName() {
+		return empName;
+	}
+
+	public void setEmpName(String empName) {
+		this.empName = empName;
+	}
+
+	private int employeeId;
+	private String empName;
 	
 	/*
 	 * You must implement the logic for below 2 methods and 
@@ -33,9 +52,12 @@ public class EmployeeInfo {
 	 * Must implement below constructor.
 	 */
 	public EmployeeInfo(int employeeId){
+		this.employeeId=employeeId;
 		
 	}
     public EmployeeInfo(String name, int employeeId){
+		this.employeeId=employeeId;
+		empName =name;
 		
 	}
 	

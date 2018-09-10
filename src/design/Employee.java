@@ -13,6 +13,9 @@ public interface Employee {
 	
 	//employeeName() will return employee name
 	public String employeeName();
+
+	//will return join date of the employees;
+	public String employeeJoinDate();
 	
 	//assignDepartment() will assign employee to departments
     public void assignDepartment();
