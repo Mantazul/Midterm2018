@@ -8,7 +8,13 @@ public class Sort {
 	 * Store all the sorted data into one of the databases.
 	 */
 
+    public static void main(String[] args) {
+        Sort sort1 = new Sort();
+        int[] array = {3,5,1,2,65,9,8};
 
+        sort1.bucketSort(array,65);
+        printSortedArray(array);
+    }
 
     public int[] selectionSort(int [] array){
         final long startTime = System.currentTimeMillis();
@@ -36,7 +42,16 @@ public class Sort {
         final long startTime = System.currentTimeMillis();
         int [] list = array;
         //implement here
-
+        int temp;
+        for(int i=0;i<array.length;i++){
+            for(int j=i;j>0;j--){
+                if(array[j]<array[j-1]){
+                    temp=array[j];
+                    array[j]=array[j-1];
+                    array[j-1]=temp;
+                }
+            }
+        }
 
 
         final long endTime = System.currentTimeMillis();
@@ -218,6 +233,7 @@ public class Sort {
 
 
     public int [] bucketSort(int [] array,int maxArrayElementValue){
+        final long startTime = System.currentTimeMillis();
         int [] list = array;
         int max = maxArrayElementValue;
         int [] bucket=new int[max+1];
@@ -237,6 +253,9 @@ public class Sort {
             }
         }
 
+        final long endTime = System.currentTimeMillis();
+        final long executionTime = endTime - startTime;
+        this.executionTime = executionTime;
         return list;
     }
     
