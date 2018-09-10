@@ -2,7 +2,7 @@ package string.problems;
 
 public class Palindrome {
 
-    public static void isPalindrome(String string) {
+    public static boolean isPalindrome(String string) {
    String word = string;
     StringBuilder palindrom = new StringBuilder();
 
@@ -14,8 +14,8 @@ public class Palindrome {
 
     String revPalindrom = new String(palindrom);
 
-        if(word.matches(revPalindrom)) System.out.println(word+" is palindrome.");
-        else System.out.println(word+ " is not palindrome.");
+        if(word.matches(revPalindrom)) return true;
+        else return false;
 
 
 
@@ -27,9 +27,9 @@ public class Palindrome {
           Palindrome. So write java code to check if a given String is Palindrome or not.
          */
 
-        isPalindrome("MOM");
-        isPalindrome("DaD");
-        isPalindrome("MaMa");
+        if(isPalindrome("MOM")) System.out.println("is Palindrome");
+        else System.out.println("Not palindrome");
+
 
     }
 }
