@@ -1,0 +1,18 @@
+
+ SPECULATIONS:
+   (All the conclusions are exempting Shell sort. I didn't have the time to study it.)
+
+	 * For array size = 10 --> every algoritm is fast except Bucket Sort which takes 10 milli sec.
+	 *For array size = 100 --> merge sort takes 3,bubble sort 1 and bucket sort 11 milli sec. all other 0 milli sec.
+	 * For array size = 1000 --> heap sort takes 0 milli sec and bubble(7 ms) and bucket(9ms) sort take most time.
+	 * For array size = 10000 --> heap and quick (4ms) is fastest, merge (8ms), bucket(13 ms) is faster, selection(53ms),Insertion(81ms)
+	  is slow and bubble sort(198ms) is slowest
+     *For array size = 100000 --> bucket(11ms) is fastest. heap(16ms),quick(19),merge(40) is faster. selection(4349ms),
+		insertion(7184ms) is slow. bubble sort(22573ms) is slowest.
+
+	CONCLUSION:
+
+   So, the conclusion is that, bubble sort, selection sort and insertin sort are fastest sorting
+        algorithm for small sized array and bucket sort is the worst.
+   For array with average size, heap sort and quick sort  fastest.
+   For array with large data size, bucket sort, heap sort, quick sort and merge sort are the best sorting algorithm.

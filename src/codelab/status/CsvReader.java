@@ -38,7 +38,9 @@ public class CsvReader {
             e.printStackTrace();
         }
         Collections.sort(roster);
+        int total = 0;
         for(Trainee student:roster) {
+            total+= student.getNumberOfExercisesSolved();
             if (student.getNumberOfExercisesSolved()>=600) {
                 System.out.print("You did pretty good-->");
                 System.out.println(student.getFirstName() + " " + student.getLastName() + " " + student.getNumberOfExercisesSolved());
@@ -62,6 +64,10 @@ public class CsvReader {
                 System.out.println(student.getFirstName() + " " + student.getLastName() + " " + student.getNumberOfExercisesSolved());
             }
         }
+
+        int number = roster.size();
+        double average  = (double) total/number;
+        System.out.println("\n\naverage problem solved by the class: "+average);
 
     }
 
