@@ -8,14 +8,6 @@ public class Sort {
 	 * Store all the sorted data into one of the databases.
 	 */
 
-    public static void main(String[] args) {
-        Sort sort1 = new Sort();
-        int[] array = {3,5,1,2,65,9,8};
-
-        sort1.bucketSort(array,65);
-        printSortedArray(array);
-    }
-
     public int[] selectionSort(int [] array){
         final long startTime = System.currentTimeMillis();
         int [] list = array;
