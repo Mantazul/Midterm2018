@@ -9,7 +9,14 @@
 	  is slow and bubble sort(198ms) is slowest
      *For array size = 100000 --> bucket(11ms) is fastest. heap(16ms),quick(19),merge(40) is faster. selection(4349ms),
 		insertion(7184ms) is slow. bubble sort(22573ms) is slowest.
-
+     *For array size = 1000000 -->
+     Total Execution Time of 1000000 numbers in Selection Sort take: 449609 milli sec
+     Total Execution Time of 1000000 numbers in Insertion Sort take: 763313 milli sec
+     Total Execution Time of 1000000 numbers in Bubble Sort take: 2399750 milli sec
+     Total Execution Time of 1000000 numbers in Merge Sort take: 347 milli sec
+     Total Execution Time of 1000000 numbers in Quick Sort take: 184 milli sec
+     Total Execution Time of 1000000 numbers in Heap Sort take: 174 milli sec
+     Total Execution Time of 1000000 numbers in Bucket Sort take: 21 milli sec
 	CONCLUSION:
 
    So, the conclusion is that, bubble sort, selection sort and insertin sort are fastest sorting
